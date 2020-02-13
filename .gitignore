@@ -119,4 +119,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Mac File
+*.DS_Store
+
+# Virtual Enviroment
+/dbvenv
+
 # End of https://www.gitignore.io/api/django
