@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block pgtitle %}
+	用户登录
+{% endblock pgtitle %}
+
+{% block main_content %}
+    <form class="" action="" method="POST">
+		{% csrf_token %}
+		{{ error }}
+	    <input type="text" name="username" value="" placeholder="用户名">
+	    <input type="password" name="password" value="" placeholder="密码">
+	    <button type="submit" name="submit">立即登录</button>
+	    <a href="{% url 'account:people'%}">返回主页</a>
+	    <!--暂时放此页面-->
+   	</form>
+{% endblock main_content %}
